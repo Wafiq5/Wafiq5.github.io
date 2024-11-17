@@ -1,9 +1,8 @@
 .welcome-section-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /*margin-top: 120px;*/
-    height: calc(100vh - 120px);
+    /*align-items: center;*/
+    height: 800px;
 }
 
 .welcome-section-text-container {
@@ -16,8 +15,9 @@
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 100px;
+    height: 800px;
 }
 
 .welcome-paragraph {

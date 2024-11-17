@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="CSS/landing-welcome.css">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/pictures.css">
+    <link rel="stylesheet" href="CSS/animations.css">
     <link rel="stylesheet" href="CSS/test-debug.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
     <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 </head>
 
@@ -46,9 +49,7 @@
                     <div class="welcome-paragraph">
                         I am a High school student with 1.5M years of coding experience!
                     </div>
-                    <div class="button know-more-button">
-                        Know More!
-                    </div>
+                    <div class="button know-more-button">Know More!</div>
                 </div>
                 <div class="welcome-section-image-container">
                     <img class="pic-1 landing-image" src="Pictures/Pic%20-%201%20(Landing%20%7BCPU%20CHIP%7D).svg" alt="CPU with Wafiq's Logo">
@@ -62,56 +63,59 @@
         <div class="coding-experience-section">
             <div class="coding-experience-section-paragraph-container">
                 <div class="coding-experience-section-paragraph-title">My experiences</div>
+                <div class="button know-more-button">Know More!</div>
             </div>
             <!--Window UI Thingy-->
-            <div class="ui-window">
-                <div class="ui-window__layer" name="code">
-                    <code>
-                        <span class="function">sendReservationInfo</span>
-                        <span class="parameter">user</span>{
-                        <div class="statements">
-                            <div>
-                                <span class="var">username</span> =
-                                <span class="called__parameter">user</span>
-                            </div>
-                            <div>
-                                <span class="var">message</span> =
-                                <span class="multi-line-string">#{username}, your reservation has been recorded!</span>
-                            </div>
-                        </div>
-                        <br>
-                        <div>
-                            <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">Successfully Recorded Reservation</span></span>)
-                            <br>
-                            }
-                        </div>
-                        <br>
-                        <div>
-                            <span class="function">getUserDetails</span>
-                            <span class="parameter">userId</span>{
+            <div class="ui-window-container">
+                <div class="ui-window">
+                    <div class="ui-window__layer" name="code">
+                        <code>
+                            <span class="function">sendReservationInfo</span>
+                            <span class="parameter">user</span>{
                             <div class="statements">
                                 <div>
-                                    <span class="var">userDetails</span> =
-                                    <span class="node">fetchUserInfo</span>(<span class="called__parameter">userId</span>)
+                                    <span class="var">username</span> =
+                                    <span class="called__parameter">user</span>
                                 </div>
                                 <div>
-                                    <span class="var">userName</span> =
-                                    <span class="node">userDetails</span>.<span class="child">name</span>
-                                </div>
-                                <div>
-                                    <span class="var">userEmail</span> =
-                                    <span class="node">userDetails</span>.<span class="child">email</span>
-
+                                    <span class="var">message</span> =
+                                    <span class="multi-line-string">#{username}, your reservation has been recorded!</span>
                                 </div>
                             </div>
                             <br>
                             <div>
-                                <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">User Info: </span> +<span class="var"> userName</span><span class="string">, </span><span class="var"> userEmail</span></span>)
-                                <br>}<div class="blinking-cursor"></div>
+                                <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">Successfully Recorded Reservation</span></span>)
+                                <br>
+                                }
                             </div>
+                            <br>
+                            <div>
+                                <span class="function">getUserDetails</span>
+                                <span class="parameter">userId</span>{
+                                <div class="statements">
+                                    <div>
+                                        <span class="var">userDetails</span> =
+                                        <span class="node">fetchUserInfo</span>(<span class="called__parameter">userId</span>)
+                                    </div>
+                                    <div>
+                                        <span class="var">userName</span> =
+                                        <span class="node">userDetails</span>.<span class="child">name</span>
+                                    </div>
+                                    <div>
+                                        <span class="var">userEmail</span> =
+                                        <span class="node">userDetails</span>.<span class="child">email</span>
 
-                        </div>
-                    </code>
+                                    </div>
+                                </div>
+                                <br>
+                                <div>
+                                    <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">User Info: </span> +<span class="var"> userName</span><span class="string">, </span><span class="var"> userEmail</span></span>)
+                                    <br>}<div class="blinking-cursor"></div>
+                                </div>
+
+                            </div>
+                        </code>
+                    </div>
                 </div>
                 <div class="ui-window-shadow"></div>
             </div>

@@ -1,0 +1,79 @@
+header {
+    color: #fff;
+    padding: 20px 90px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 90px rgba(0, 0, 51, 0.61);
+    width: 100%;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 14, 0.3);
+    border-radius: 20px;
+}
+
+.navbar {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar .navbar-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .navbar-li {
+    font-family: Cascadia Code, sans-serif;
+}
+
+.navbar-li:hover .hover-curly-braces {
+    color: transparent;
+    background-image: linear-gradient(45deg, #42d392, #647eff);
+    background-clip: text;
+    opacity: 0.75;
+    -webkit-background-clip: text;
+    box-shadow: 0 0 0 0 linear-gradient(45deg, #42d392, #647eff);
+    font-family: Cascadia Code, sans-serif;
+    font-weight: 600;
+    transition: background-image 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-li:hover {
+    cursor: pointer;
+    color: #dee0e7;
+}
+
+.navbar-li:active {
+    color: #9da1af;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 30px;
+}
+
+.brand-logo:hover {
+    background-image: linear-gradient(45deg, #29cc83, #4866ff);
+    background-clip: text;
+    opacity: 1;
+}
+
+.brand-text {
+    color: #dee0e7;
+    margin: 0 1px;
+    font-family: Cascadia Code, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.menu-toggle {
+    display: none;
+}

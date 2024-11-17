@@ -1,0 +1,134 @@
+.blinking-cursor{
+    display: inline;
+}
+.blinking-cursor::after {
+    content: "_";
+    animation: cursor_blink 1s infinite;
+    color: #ffffff;
+}
+
+@keyframes cursor_blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.section-gap{
+    width: 100%;
+    height: 200px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 14);
+    opacity: .1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(85deg, rgba(66, 211, 146, 0.34), rgba(100, 126, 255, 0.41));
+    border-radius: 20px;
+}
+
+.gradient-text {
+    color: transparent;
+    background-image: linear-gradient(45deg, #42d392, #647eff);
+    background-clip: text;
+    opacity: 0.75;
+    -webkit-background-clip: text;
+    box-shadow: 0 0 0 0 linear-gradient(45deg, #42d392, #647eff);
+    font-family: Cascadia Code, sans-serif;
+    font-weight: 600;
+    transition: background-image 0.3s ease;
+    cursor: pointer;
+}
+.grid-left {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    gap: 0;
+    background: transparent;
+    z-index: 0;
+    filter: blur(1px);
+    opacity: .1;
+}
+
+.grid-left::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #29cc83 1px, transparent 1px),
+    linear-gradient(180deg, #647eff 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+.grid-right {
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1fr);
+    gap: 0;
+    background: transparent;
+    z-index: 0;
+    filter: blur(1px);
+    opacity: .1;
+}
+
+.grid-right::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #29cc83 1px, transparent 1px),
+    linear-gradient(180deg, #647eff 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+.button {
+    color: #ffffff;
+    position: relative;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.button::before {
+    content: "{ ";
+    font-size: inherit;
+    color: inherit;
+}
+
+.button::after {
+    content: " }";
+    font-size: inherit;
+    color: inherit;
+}
+
+.button:hover::before,
+.button:hover::after {
+    background-image: linear-gradient(45deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.75;
+    font-family: Cascadia Code, sans-serif;
+    font-weight: 600;
+    transition: background-image 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+}
+
+/*TODO Add button before/after and hover*/

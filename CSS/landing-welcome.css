@@ -1,0 +1,41 @@
+.welcome-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 120px;*/
+    height: calc(100vh - 120px);
+}
+
+.welcome-section-text-container {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.welcome-section {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.welcome-paragraph {
+    color: #9da1af;
+    max-width: 300px;
+    min-width: 300px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Cascadia Code', monospace;
+}
+
+.welcome-text-head-h1 {
+    color: #fff;
+    font-family: Cascadia Code, sans-serif;
+}
+
+
+.welcome-section-image-container {
+    display: flex;
+}
+

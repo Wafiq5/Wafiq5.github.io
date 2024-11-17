@@ -1,0 +1,214 @@
+
+.coding-experience-section-container{
+    display: flex;
+    justify-content: center;
+
+}
+.coding-experience-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+.coding-experience-section-paragraph-title{
+    color: #ffffff;
+    font-size: 34px;
+}
+:root {
+    --base-color: #ecf0f1;
+    --code-layer-color: #010b1f;
+    --function-color: #e67e22;
+    --function-name-color: #f1c40f;
+    --string-color: #2ecc71;
+    --parameter-color: #3498db;
+    --var-color: #e74c3c;
+    --comment-color: #7f8c8d;
+    --network-layer-color: #1abc9c;
+}
+
+.ui-window {
+    width: 310px;
+    height: 360px;
+    background: var(--base-color);
+    border-radius: 10px;
+    transform: skew(0deg, 15deg);
+    box-shadow: 5px -5px 0 1px rgba(0, 0, 38, 0.55);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.ui-window-shadow{
+    width: 300px;
+    height: 50px;
+    background-color: #4866ff;
+    box-shadow: 10px 10px 75px 10px #003e7c;
+    z-index: -10;
+}
+.ui-window__layer {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 6px;
+
+    &[name="code"] {
+        background: var(--code-layer-color);
+
+        code {
+            color: var(--base-color);
+
+            .function {
+                color: var(--function-color);
+
+                &:after {
+                    content: " = ";
+                    color: var(--function-name-color);
+                }
+            }
+
+            .parameter {
+                color: var(--parameter-color);
+
+                &:before {
+                    content: "( ";
+                    color: var(--base-color);
+                }
+
+                &:after {
+                    content: " ) ->";
+                    color: var(--base-color);
+                }
+            }
+
+            .statements {
+                margin-top: 0.5rem;
+                padding-left: 2rem;
+            }
+
+            .var {
+                color: var(--var-color);
+
+
+            }
+
+            .called__parameter {
+                color: var(--parameter-color);
+            }
+
+            .node {
+                color: var(--parameter-color);
+            }
+
+            .child {
+                color: var(--function-name-color);
+
+            }
+            .string{
+                color: var(--string-color);
+
+                &:before,
+                &:after {
+                    content: '"';
+                }
+
+                &:after {
+                    margin-top: 1rem;
+                }
+            }
+            .multi-line-string {
+                color: var(--string-color);
+                display: block;
+                &:before,
+                &:after {
+                    content: '"""';
+                }
+
+                &:after {
+                    margin-top: 1rem;
+                }
+            }
+
+            .comment-block {
+                color: var(--comment-color);
+                margin-top: 1rem;
+
+                &:before {
+                    content: "/* =====================";
+                    display: block;
+                }
+
+                &:after {
+                    content: "===================== */";
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    header {
+        padding: 20px 50px;
+
+    }
+
+    .navbar .navbar-ul {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        padding: 10px 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .navbar-ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .brand-name {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        height: calc(100vh - 200px);
+        justify-content: space-around;
+    }
+
+    .grid-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .coding-experience-section {
+        flex-direction: column;
+    }
+
+    .ui-window {
+        transform: skew(0deg, 0deg);
+        box-shadow: none;
+        border-radius: 10px;
+
+    }
+
+}

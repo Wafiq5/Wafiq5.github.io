@@ -39,10 +39,12 @@
 
     .welcome-section {
         flex-direction: column;
-        /*height: calc(100vh - 200px);*/
         justify-content: space-around;
+        height: 800px;
     }
-
+    .welcome-section-container{
+        height: min-content;
+    }
     .grid-left {
         width: 100%;
         height: 100%;

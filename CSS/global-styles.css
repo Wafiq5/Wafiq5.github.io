@@ -91,7 +91,7 @@
 .button {
     color: #ffffff;
     position: relative;
-    transition: all 1s ease;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
@@ -115,8 +115,14 @@
     opacity: 0.75;
     font-family: Cascadia Code, sans-serif;
     font-weight: 600;
-    transition: background-image 0.5s ease, opacity 0.5s ease;
+    transition: background-image 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
-
+.button:active{
+    color: #7f8c8d;
+}
+.button:active::before,
+.button:active::after {
+    opacity: .5;
+}
 /*TODO Add button before/after and hover*/

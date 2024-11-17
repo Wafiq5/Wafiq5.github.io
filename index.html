@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<!--    NAVBAR-->
     <header class="navbar-header">
         <div class="navbar">
             <div class="brand-name">
@@ -18,7 +19,7 @@
             </div>
 
             <ul class="navbar-ul">
-                <li class="navbar-li"><span class="hover-curly-braces">&#123;</span> Home <span
+                <li class="navbar-li button"><span class="hover-curly-braces">&#123;</span> Home <span
                         class="hover-curly-braces">&#125;</span></li>
                 <li class="navbar-li"><span class="hover-curly-braces">&#123;</span> Skills <span
                         class="hover-curly-braces">&#125;</span></li>
@@ -29,19 +30,17 @@
             </ul>
         </div>
     </header>
-
+<!--LANDER/WELCOME SECTION-->
     <div class="welcome-section-container">
-            <div class="grid">
-            </div>
+            <div class="grid-left"></div>
             <div class="welcome-section">
                 <div class="welcome-section-text-container">
                     <div class="welcome-text">
                         <div class="welcome-text-head">
-                            <h1 class="welcome-text-head-h1">Hello, I'm <span class="gradient-text">Wafiq</span> </h1>
+                            <h1 class="welcome-text-head-h1">Hello, I'm <span class="gradient-text">Wafiq</span> <div class="blinking-cursor"></div> </h1>
                         </div>
                     </div>
                     <div class="welcome-paragraph">
-                        <br>
                         I am a High school student with 1.5M years of coding experience!
                     </div>
                     <div class="button know-more-button">
@@ -51,14 +50,74 @@
                     </div>
                 </div>
                 <div class="welcome-section-image-container">
-
                     <img class="pic-1 landing-image" src="Pictures/Pic%20-%201%20(Landing%20%7BCPU%20CHIP%7D).svg" alt="CPU with Wafiq's Logo">
-
                 </div>
-                
+            </div>
+    </div>
+
+    <div class="section-gap"></div>
+<!--MY EXPERIENCE-->
+    <div class="coding-experience-section-container">
+        <div class="coding-experience-section">
+            <div class="coding-experience-section-paragraph-container">
+                <div class="coding-experience-section-paragraph-title">My experience</div>
+
+            </div>
+            <!--Window UI Thingy-->
+            <div class="ui-window">
+                <div class="ui-window__layer" name="code">
+                    <code>
+                        <span class="function">sendReservationInfo</span>
+                        <span class="parameter">user</span>{
+                        <div class="statements">
+                            <div>
+                                <span class="var">username</span> =
+                                <span class="called__parameter">user</span>
+                            </div>
+                            <div>
+                                <span class="var">message</span> =
+                                <span class="multi-line-string">#{username}, your reservation has been recorded!</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">Successfully Recorded Reservation</span></span>)
+                            <br>
+                            }
+                        </div>
+                        <br>
+                        <div>
+                            <span class="function">getUserDetails</span>
+                            <span class="parameter">userId</span>{
+                            <div class="statements">
+                                <div>
+                                    <span class="var">userDetails</span> =
+                                    <span class="node">fetchUserInfo</span>(<span class="called__parameter">userId</span>)
+                                </div>
+                                <div>
+                                    <span class="var">userName</span> =
+                                    <span class="node">userDetails</span>.<span class="child">name</span>
+                                </div>
+                                <div>
+                                    <span class="var">userEmail</span> =
+                                    <span class="node">userDetails</span>.<span class="child">email</span>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="node">console</span>.<span class="child">log</span>(<span class="logger"><span class="string">User Info: </span> +<span class="var"> userName</span><span class="string">, </span><span class="var"> userEmail</span></span>)
+                                <br>}<div class="blinking-cursor"></div>
+                            </div>
+
+                        </div>
+                    </code>
+                </div>
             </div>
         </div>
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    </div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 
 </html>

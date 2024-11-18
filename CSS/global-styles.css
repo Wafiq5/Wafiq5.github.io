@@ -42,16 +42,17 @@
     position: absolute;
     left: 0;
     width: 500px;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(100, 1fr);
     grid-template-rows: repeat(100, 1fr);
     gap: 0;
     background: transparent;
-    z-index: 0;
+
     filter: blur(1px);
     opacity: .1;
 }
+
 
 .grid-left::before {
     content: '';
@@ -73,7 +74,7 @@
     grid-template-rows: repeat(100, 1fr);
     gap: 0;
     background: transparent;
-    z-index: 0;
+
     filter: blur(1px);
     opacity: .1;
 }
@@ -90,9 +91,12 @@
 }
 .button {
     color: #ffffff;
-    position: relative;
     transition: all .2s ease;
     cursor: pointer;
+    width: max-content;
+    background: transparent;
+    border: none;
+    /*display: flex;*/
 }
 
 .button::before {
@@ -125,4 +129,3 @@
 .button:active::after {
     opacity: .5;
 }
-/*TODO Add button before/after and hover*/

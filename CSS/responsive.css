@@ -52,7 +52,7 @@
 
     .coding-experience-section {
         flex-direction: column;
-        gap: 100px;
+        gap: 6.25rem;
     }
 
     .ui-window {
@@ -68,6 +68,14 @@
         align-items: center;
     }
     .coding-experience-section-paragraph-container{
+        align-items: center;
+    }
+
+    .yt-channel-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .yt-channel-section-text-container{
         align-items: center;
     }
 }

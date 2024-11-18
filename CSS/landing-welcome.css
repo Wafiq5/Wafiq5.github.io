@@ -1,7 +1,7 @@
 .welcome-section-container {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    align-items: center;
     height: 500px;
 }
 
@@ -17,7 +17,8 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-
+    z-index: 2;
+    position: relative;
 }
 
 .welcome-paragraph {

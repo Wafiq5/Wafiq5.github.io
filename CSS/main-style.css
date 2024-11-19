@@ -1,13 +1,8 @@
 :root {
-        --header-background-color: rgba(0, 0, 14, 0.3);
-        --title-text-color: #fff;
-        --navbar-hover-color: #dee0e7;
-        --paragraph-color: #9da1af;
-        --gradient-start: #42d392;
-        --gradient-end: #647eff;
-        --box-shadow-color: rgba(0, 0, 51, 0.61);
-
-
+    --text-color: #fff;
+    --paragraph-color: #9da1af;
+    --gradient-start: #42d392;
+    --gradient-end: #647eff;
 
     --window-ui-base-color: #ecf0f1;
     --window-ui-code-layer-color: #010b1f;

@@ -4,7 +4,7 @@
 .blinking-cursor::after {
     content: "_";
     animation: cursor_blink 1s infinite;
-    color: var(--title-text-color);
+    color: var(--text-color);
 }
 
 .section-gap{
@@ -91,7 +91,7 @@
 }
 
 .button {
-    color: var(--title-text-color);
+    color: var(--text-color);
     transition: all .2s ease;
     cursor: pointer;
     width: max-content;

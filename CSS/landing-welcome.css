@@ -31,7 +31,7 @@
 }
 
 .welcome-text-head-h1 {
-    color: var(--title-text-color);
+    color: var(--text-color);
     font-family: Cascadia Code, sans-serif;
 }
 

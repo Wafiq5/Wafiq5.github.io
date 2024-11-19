@@ -22,7 +22,7 @@
 }
 
 .welcome-paragraph {
-    color: #9da1af;
+    color: var(--paragraph-color);
     max-width: 300px;
     min-width: 300px;
     font-size: 20px;
@@ -31,12 +31,10 @@
 }
 
 .welcome-text-head-h1 {
-    color: #fff;
+    color: var(--title-text-color);
     font-family: Cascadia Code, sans-serif;
 }
-
 
 .welcome-section-image-container {
     display: flex;
 }
-

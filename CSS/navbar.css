@@ -1,5 +1,5 @@
 header {
-    color: #fff;
+    color: var(--title-text-color);
     padding: 20px 90px;
     z-index: 1000;
     position: sticky;
@@ -7,12 +7,12 @@ header {
     box-shadow: 1px 1px 90px rgba(0, 0, 51, 0.61);
     width: 100%;
     backdrop-filter: blur(6px);
-    background: rgba(0, 0, 14, 0.3);
+    background: var(--header-background-color);
     border-radius: 20px;
 }
 
 .navbar {
-    color: #fff;
+    color: var(--title-text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,11 +31,11 @@ header {
 
 .navbar-li:hover .hover-curly-braces {
     color: transparent;
-    background-image: linear-gradient(45deg, #42d392, #647eff);
+    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Updated variable names */
     background-clip: text;
     opacity: 0.75;
     -webkit-background-clip: text;
-    box-shadow: 0 0 0 0 linear-gradient(45deg, #42d392, #647eff);
+    box-shadow: 0 0 0 0 linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Updated variable names */
     font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease;
@@ -44,11 +44,11 @@ header {
 
 .navbar-li:hover {
     cursor: pointer;
-    color: #dee0e7;
+    color: var(--navbar-hover-color);
 }
 
 .navbar-li:active {
-    color: #9da1af;
+    color: var(--paragraph-color);
 }
 
 .brand-name {
@@ -61,13 +61,13 @@ header {
 }
 
 .brand-logo:hover {
-    background-image: linear-gradient(45deg, #29cc83, #4866ff);
+    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     background-clip: text;
     opacity: 1;
 }
 
 .brand-text {
-    color: #dee0e7;
+    color: var(--navbar-hover-color);
     margin: 0 1px;
     font-family: Cascadia Code, sans-serif;
     font-size: 25px;

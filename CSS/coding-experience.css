@@ -20,27 +20,18 @@
     color: #ffffff;
     font-size: 34px;
 }
-:root {
-    --base-color: #ecf0f1;
-    --code-layer-color: #010b1f;
-    --function-color: #e67e22;
-    --function-name-color: #f1c40f;
-    --string-color: #2ecc71;
-    --parameter-color: #3498db;
-    --var-color: #e74c3c;
-    --comment-color: #7f8c8d;
-    --network-layer-color: #1abc9c;
-}
-.ui-window-container{
+
+.ui-window-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
 }
+
 .ui-window {
     width: 310px;
     height: 360px;
-    background: var(--base-color);
+    background: var(--window-ui-base-color);
     border-radius: 10px;
     box-shadow: 5px -5px 0 1px rgba(0, 0, 38, 0.55);
     font-size: 12px;
@@ -50,48 +41,48 @@
     gap: 25px;
     animation: 4s infinite hovering_window;
 }
-.ui-window-shadow{
+
+.ui-window-shadow {
     width: 300px;
     height: 0px;
-    background-color: #4866ff;
+    background-color: var(--window-ui-brand-logo-hover-gradient-end);
     box-shadow: 10px 10px 75px 10px rgba(0, 62, 124, 0.8);
     z-index: -10;
     transform: skew(0deg, 15deg);
     animation: 4s infinite shadow_shrink;
 }
+
 .ui-window__layer {
     height: 100%;
     padding: 2rem;
     border-radius: 6px;
 
-
-
     &[name="code"] {
-        background: var(--code-layer-color);
+        background: var(--window-ui-code-layer-color);
 
         code {
-            color: var(--base-color);
+            color: var(--window-ui-base-color);
 
             .function {
-                color: var(--function-color);
+                color: var(--window-ui-function-color);
 
                 &:after {
                     content: " = ";
-                    color: var(--function-name-color);
+                    color: var(--window-ui-function-name-color);
                 }
             }
 
             .parameter {
-                color: var(--parameter-color);
+                color: var(--window-ui-parameter-color);
 
                 &:before {
                     content: "( ";
-                    color: var(--base-color);
+                    color: var(--window-ui-base-color);
                 }
 
                 &:after {
                     content: " ) ->";
-                    color: var(--base-color);
+                    color: var(--window-ui-base-color);
                 }
             }
 
@@ -101,25 +92,23 @@
             }
 
             .var {
-                color: var(--var-color);
-
-
+                color: var(--window-ui-var-color);
             }
 
             .called__parameter {
-                color: var(--parameter-color);
+                color: var(--window-ui-parameter-color);
             }
 
             .node {
-                color: var(--parameter-color);
+                color: var(--window-ui-parameter-color);
             }
 
             .child {
-                color: var(--function-name-color);
-
+                color: var(--window-ui-function-name-color);
             }
-            .string{
-                color: var(--string-color);
+
+            .string {
+                color: var(--window-ui-string-color);
 
                 &:before,
                 &:after {
@@ -130,9 +119,11 @@
                     margin-top: 1rem;
                 }
             }
+
             .multi-line-string {
-                color: var(--string-color);
+                color: var(--window-ui-string-color);
                 display: block;
+
                 &:before,
                 &:after {
                     content: '"""';
@@ -144,7 +135,7 @@
             }
 
             .comment-block {
-                color: var(--comment-color);
+                color: var(--window-ui-comment-color);
                 margin-top: 1rem;
 
                 &:before {

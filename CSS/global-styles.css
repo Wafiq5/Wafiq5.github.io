@@ -4,43 +4,45 @@
 .blinking-cursor::after {
     content: "_";
     animation: cursor_blink 1s infinite;
-    color: #ffffff;
+    color: var(--title-text-color);
 }
-
 
 .section-gap{
     width: 100%;
     height: 200px;
 }
+
 ::-webkit-scrollbar {
     width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(0, 0, 14);
+    background: var(--header-background-color);
     opacity: .1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(85deg, rgba(66, 211, 146, 0.34), rgba(100, 126, 255, 0.41));
+    background-image: linear-gradient(85deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     border-radius: 20px;
 }
 
 .gradient-text {
     color: transparent;
-    background-image: linear-gradient(45deg, #42d392, #647eff);
+    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     background-clip: text;
     opacity: 0.75;
     -webkit-background-clip: text;
-    box-shadow: 0 0 0 0 linear-gradient(45deg, #42d392, #647eff);
+    box-shadow: 0 0 0 0 linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease;
     cursor: pointer;
 }
+
 .grid-left {
     position: absolute;
     left: 0;
+    top: 0;
     width: 500px;
     height: 100%;
     display: grid;
@@ -48,11 +50,9 @@
     grid-template-rows: repeat(100, 1fr);
     gap: 0;
     background: transparent;
-
     filter: blur(1px);
     opacity: .1;
 }
-
 
 .grid-left::before {
     content: '';
@@ -60,10 +60,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, #29cc83 1px, transparent 1px),
-    linear-gradient(180deg, #647eff 1px, transparent 1px);
+    background-image: linear-gradient(90deg, var(--gradient-start) 1px, transparent 1px),
+    linear-gradient(180deg, var(--gradient-end) 1px, transparent 1px);
     background-size: 30px 30px;
 }
+
 .grid-right {
     position: absolute;
     right: 0;
@@ -74,7 +75,6 @@
     grid-template-rows: repeat(100, 1fr);
     gap: 0;
     background: transparent;
-
     filter: blur(1px);
     opacity: .1;
 }
@@ -85,18 +85,18 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, #29cc83 1px, transparent 1px),
-    linear-gradient(180deg, #647eff 1px, transparent 1px);
+    background-image: linear-gradient(90deg, var(--gradient-start) 1px, transparent 1px),
+    linear-gradient(180deg, var(--gradient-end) 1px, transparent 1px);
     background-size: 30px 30px;
 }
+
 .button {
-    color: #ffffff;
+    color: var(--title-text-color);
     transition: all .2s ease;
     cursor: pointer;
     width: max-content;
     background: transparent;
     border: none;
-    /*display: flex;*/
 }
 
 .button::before {
@@ -113,7 +113,7 @@
 
 .button:hover::before,
 .button:hover::after {
-    background-image: linear-gradient(45deg, #42d392, #647eff);
+    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.75;
@@ -122,9 +122,11 @@
     transition: background-image 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
+
 .button:active{
-    color: #7f8c8d;
+    color: var(--paragraph-color);
 }
+
 .button:active::before,
 .button:active::after {
     opacity: .5;

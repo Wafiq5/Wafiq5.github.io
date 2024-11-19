@@ -1,0 +1,36 @@
+:root {
+        --header-background-color: rgba(0, 0, 14, 0.3);
+        --title-text-color: #fff;
+        --navbar-hover-color: #dee0e7;
+        --paragraph-color: #9da1af;
+        --gradient-start: #42d392;
+        --gradient-end: #647eff;
+        --box-shadow-color: rgba(0, 0, 51, 0.61);
+
+
+
+    --window-ui-base-color: #ecf0f1;
+    --window-ui-code-layer-color: #010b1f;
+    --window-ui-function-color: #e67e22;
+    --window-ui-function-name-color: #f1c40f;
+    --window-ui-string-color: #2ecc71;
+    --window-ui-parameter-color: #3498db;
+    --window-ui-var-color: #e74c3c;
+    --window-ui-comment-color: #7f8c8d;
+    --window-ui-network-layer-color: #1abc9c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Code, sans-serif;
+    
+}
+
+body, html {
+    background-color: rgb(0, 0, 14);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

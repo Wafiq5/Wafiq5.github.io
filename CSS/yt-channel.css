@@ -1,29 +1,30 @@
-.yt-channel-section-container{
+.yt-channel-section-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.yt-channel-section{
+
+.yt-channel-section {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
-.yt-channel-section-image-container{
-    width: 250px;
 
-}
-.yt-channel-section-paragraph-title{
-    font-size: 34px;
-    color: #ffffff;
-}
-.yt-channel-section-text-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.yt-channel-section-image-container{
+.yt-channel-section-image-container {
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.yt-channel-section-paragraph-title {
+    font-size: 34px;
+    color: var(--title-text-color);
+}
+
+.yt-channel-section-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

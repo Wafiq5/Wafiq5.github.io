@@ -28,11 +28,11 @@
 
 .navbar-li:hover .hover-curly-braces {
     color: transparent;
-    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Updated variable names */
+    background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     background-clip: text;
     opacity: 0.75;
     -webkit-background-clip: text;
-    box-shadow: 0 0 0 0 linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Updated variable names */
+    box-shadow: 0 0 0 0 linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease;
@@ -76,5 +76,40 @@
 }
 
 /*BUBBLE NAVBAR*/
-.bubble-navbar{
+.bubble-navbar {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+
+.bubble-navbar .navbar-ul{
+    display: flex;
+    justify-content: space-between;
+    width: min-content;
+    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31)); /* Translucent gradient */
+    backdrop-filter: blur(6px);
+    border-radius: 60px;
+
+}
+.bubble-navbar .navbar-ul li{
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 60px;
+
+}
+.bubble-navbar-ul li:hover{
+    background: #424246;
+    border-radius: 60px;
+}
+
+.bubble-navbar .brand-name{
+    display: none;
 }

@@ -131,3 +131,13 @@
 .button:active::after {
     opacity: .5;
 }
+
+
+.button-2{
+    color: var(--text-color);
+    transition: all .2s ease;
+    cursor: pointer;
+    width: max-content;
+    background: transparent;
+    border: none;
+}

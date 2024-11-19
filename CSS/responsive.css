@@ -3,13 +3,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding: 20px 0;
     }
 
-    header {
-        padding: 20px 50px;
-
-    }
 
     .navbar .navbar-ul {
         flex-direction: column;
@@ -39,11 +34,11 @@
 
     .welcome-section {
         flex-direction: column;
-        justify-content: space-around;
-        height: 800px;
+        /*justify-content: space-around;*/
+        height: min-content;
     }
     .welcome-section-container{
-        height: min-content;
+        height: max-content;
     }
     .grid-left {
         width: 100%;

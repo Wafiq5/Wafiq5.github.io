@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    position: relative;
 }
 
 .welcome-section-text-container {
@@ -23,8 +23,7 @@
 
 .welcome-paragraph {
     color: var(--paragraph-color);
-    max-width: 300px;
-    min-width: 300px;
+    width: 300px;
     font-size: 20px;
     font-weight: 100;
     font-family: 'Cascadia Code', monospace;

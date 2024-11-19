@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
+    height: calc(100vh - 75px);
 }
 
 .welcome-section-text-container {

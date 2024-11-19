@@ -1,11 +1,12 @@
+/*NORMAL NAVBAR*/
 .navbar {
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 90px;
-    position: sticky;
     z-index: 100;
+    position: sticky;
     top: 0;
     box-shadow: 1px 1px 90px rgba(0, 0, 51, 0.61);
     width: 100%;
@@ -72,4 +73,8 @@
 
 .menu-toggle {
     display: none;
+}
+
+/*BUBBLE NAVBAR*/
+.bubble-navbar{
 }

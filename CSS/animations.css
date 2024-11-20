@@ -2,24 +2,21 @@
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
+
 @keyframes hovering_window {
     0% {
         transform: skew(0deg, 15deg) translateY(5px);
     }
-
     25% {
         transform: skew(0deg, 15deg) translateY(-5px);
     }
-
     50% {
         transform: skew(0deg, 15deg) translateY(5px);
     }
@@ -30,15 +27,14 @@
         transform: skew(0deg, 15deg) translateY(5px);
     }
 }
+
 @keyframes shadow_shrink {
     0% {
-       width: 300px;
+        width: 300px;
     }
-
     25% {
         width: 250px;
     }
-
     50% {
         width: 300px;
     }
@@ -47,5 +43,26 @@
     }
     100% {
         width: 300px;
+    }
+}
+
+@keyframes navbar_appear {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bubble_navbar_appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

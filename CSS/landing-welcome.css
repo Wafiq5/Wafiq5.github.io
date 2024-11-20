@@ -35,6 +35,7 @@
 .welcome-text-head-h1 {
     color: var(--text-color);
     font-family: Cascadia Code, sans-serif;
+    font-size: 32px;
 }
 
 .welcome-section-image-container {

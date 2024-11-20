@@ -25,7 +25,9 @@
 .navbar .navbar-li {
     font-family: Cascadia Code, sans-serif;
 }
-
+.navbar .bubble-navbar-ul{
+    display: none;
+}
 .navbar-li:hover .hover-curly-braces {
     color: transparent;
     background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
@@ -90,16 +92,16 @@
 }
 
 
-.bubble-navbar .navbar-ul{
+.bubble-navbar .bubble-navbar-ul{
     display: flex;
     justify-content: space-between;
     width: min-content;
     background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31)); /* Translucent gradient */
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(7px);
     border-radius: 60px;
 
 }
-.bubble-navbar .navbar-ul li{
+.bubble-navbar .bubble-navbar-ul li{
     list-style-type: none;
     padding: 20px;
     border-radius: 60px;
@@ -111,5 +113,9 @@
 }
 
 .bubble-navbar .brand-name{
+    display: none;
+}
+
+.bubble-navbar .navbar-ul{
     display: none;
 }

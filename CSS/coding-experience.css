@@ -40,19 +40,32 @@
     align-items: center;
     gap: 25px;
     animation: 4s infinite hovering_window;
+    position: relative;
+    z-index: 10;
 }
+
 
 .ui-window-shadow {
     width: 300px;
-    height: 0px;
+    height: 0;
     background-color: transparent;
     box-shadow: 10px 10px 75px 10px rgba(0, 62, 124, 0.8);
-    z-index: -10;
     transform: skew(0deg, 15deg);
     animation: 4s infinite shadow_shrink;
+
 }
 
 .ui-window__layer {
+    --window-ui-base-color: #ecf0f1;
+    --window-ui-code-layer-color: #010b1f;
+    --window-ui-function-color: #e67e22;
+    --window-ui-function-name-color: #f1c40f;
+    --window-ui-string-color: #2ecc71;
+    --window-ui-parameter-color: #3498db;
+    --window-ui-var-color: #e74c3c;
+    --window-ui-comment-color: #7f8c8d;
+    --window-ui-network-layer-color: #1abc9c;
+
     height: 100%;
     padding: 2rem;
     border-radius: 6px;

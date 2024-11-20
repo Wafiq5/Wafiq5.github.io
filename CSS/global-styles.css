@@ -9,21 +9,21 @@
 
 .section-gap{
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
-
+.section-container{
+    position: relative;
+    height: 100vh;
+}
 ::-webkit-scrollbar {
     width: 6px;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--header-background-color);
-    opacity: .1;
-}
 
 ::-webkit-scrollbar-thumb {
     background-image: linear-gradient(85deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     border-radius: 20px;
+    opacity: .5;
 }
 
 .gradient-text {

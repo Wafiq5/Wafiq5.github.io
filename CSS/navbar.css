@@ -37,12 +37,12 @@
     background-clip: text;
     opacity: 0.75;
     -webkit-background-clip: text;
-    box-shadow: 0 0 0 0 linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
     font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease;
     cursor: pointer;
 }
+
 
 .navbar-li:hover {
     cursor: pointer;
@@ -92,14 +92,14 @@
     top: 0;
     z-index: 100;
     transition: all 0.3s ease;
-    animation: bubble_navbar_appear .3s ease-out;
+    animation: bubble_navbar_appear .8s ease-in-out;
 }
 
 .bubble-navbar .bubble-navbar-ul {
     display: flex;
     justify-content: space-between;
     width: min-content;
-    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31)); /* Translucent gradient */
+    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31));
     backdrop-filter: blur(7px);
     border-radius: 60px;
     padding: 6px;
@@ -113,7 +113,7 @@
 }
 
 .bubble-navbar-ul li:hover {
-    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31)); /* Translucent gradient */
+    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31));
     border-radius: 60px;
 }
 

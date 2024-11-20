@@ -132,7 +132,7 @@
 }
 
 .button:focus {
-    outline: none;
+    display: none;
 }
 .button-2{
     color: var(--text-color);

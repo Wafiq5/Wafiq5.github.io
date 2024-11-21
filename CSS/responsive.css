@@ -74,4 +74,27 @@
     .yt-channel-section-text-container{
         align-items: center;
     }
+
+    .footer-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        margin: 20px 0px;
+    }
+    .footer{
+        display: flex;
+    }
+    .footer-ul{
+        align-items: center;
+        text-align: center;
+    }
+    .footer-social-links{
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        text-align: center;
+    }
 }

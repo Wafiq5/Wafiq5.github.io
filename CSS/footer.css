@@ -42,9 +42,9 @@
 }
 .footer-social-links{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     font-size: 22px;
-    /*gap: 10px;*/
+    gap: 10px;
 }
 .discord-link{
     display: flex;
@@ -70,4 +70,8 @@
     opacity: 1;
     visibility: visible;
 
+}
+.footer-copyright-container{
+    color: var(--text-color);
+    opacity: .5;
 }

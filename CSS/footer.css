@@ -11,9 +11,9 @@
     z-index: 1000;
 }
 .footer-lets-code-overlay::after{
-    content: "Code";
+    content: "Cascadia Code";
     color: var(--text-color);
-    font-size: 6vw;
+    font-size: 3vw;
     opacity: .1;
 }
 .footer-ul-header{

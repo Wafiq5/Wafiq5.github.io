@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/CSS/test-debug.css">
     <link rel="stylesheet" href="/CSS/responsive.css">
     <link rel="stylesheet" href="/CSS/yt-channel.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
 
     <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,7 +24,7 @@
 
 <body>
 <!--NAVBAR-->
-
+<div class="link-copied-confirmation">Copied!</div>
 <div class="navbar">
     <div class="brand-name">
         <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="index.html">Wafiq</a></span>&gt;</span>
@@ -31,14 +32,14 @@
     </div>
 
     <ul class="navbar-ul">
-        <li class="navbar-li button"><a href="index.html">Home</a></li>
+        <li class="navbar-li button"><a href="./index.html">Home</a></li>
         <li class="navbar-li button"><a href="./HTML/skills.html">Skills</a></li>
         <li class="navbar-li button"><a href="./HTML/projects.html">Projects</a></li>
         <li class="navbar-li button"><a href="./HTML/contact.html">Contact</a></li>
     </ul>
 
     <ul class="bubble-navbar-ul">
-        <li class="navbar-li button-2"><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li class="navbar-li button-2"><a href="./index.html"><i class="fas fa-home"></i></a></li>
         <li class="navbar-li button-2"><a href="./HTML/skills.html"><i class="fa-solid fa-palette"></i></a></li>
         <li class="navbar-li button-2"><a href="./HTML/projects.html"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
         <li class="navbar-li button-2"><a href="./HTML/contact.html"><i class="fa-solid fa-phone"></i></a></li>
@@ -52,7 +53,7 @@
         <div class="welcome-section-text-container">
                 <div class="welcome-text">
                     <div class="welcome-text-head">
-                        <h1 class="welcome-text-head-h1">Hello, I'm <span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h1>
+                        <h1 class="welcome-section-paragraph-title section-header">Hello, I'm <span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h1>
                     </div>
                 </div>
                 <div class="welcome-paragraph">
@@ -72,7 +73,7 @@
     <div id="coding-experience-section-container" class="section-container coding-experience-section-container">
         <section class="coding-experience-section">
             <div class="coding-experience-section-paragraph-container">
-                <div class="coding-experience-section-paragraph-title">My skills</div>
+                <div class="coding-experience-section-paragraph-title section-header">My skills _</div>
                 <button class="button button-20px"><a href="./HTML/skills.html">Know More!</a></button>
             </div>
             <!--Window UI Thingy-->
@@ -140,14 +141,43 @@
                 <img class="pic-2 yt-channel-avatar" src="/Pictures/Pic%20-%202%20(YT-Channel%20%7BCode%20dude%7D).png" alt="">
             </div>
             <div class="yt-channel-section-text-container">
-                <div class="yt-channel-section-paragraph-title">My youtube channel</div>
+                <div class="yt-channel-section-paragraph-title section-header">My youtube channel _</div>
                 <button class="button button-20px"><a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w">Visit</a></button>
             </div>
         </section>
     </div>
     <div class="section-gap"></div>
 
+    <div class="footer-container">
+        <div class="grid-left"></div>
+        <footer class="footer">
+            <div class="footer-text-container">
+                <div class="footer-header-social-links">
+                <h2 class="section-header"><span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h2>
+                    <div class="footer-social-links">
+                        <a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="discord-link">
+                            <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
+                            <span class="discord-username">wafiq810</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-ul">
+                    <div class="footer-ul-header">Know More _</div>
+                    <li class="footer-li button"><a href="./index.html">Home</a></li>
+                    <li class="footer-li button"><a href="./HTML/skills.html">Skills</a></li>
+                    <li class="footer-li button"><a href="./HTML/projects.html">Projects</a></li>
+                    <li class="footer-li button"><a href="./HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-lets-code-overlay"></div>
+        <div class="footer-copyright-container">
 
+        </div>
+    </div>
 <!--<div class="long-space-TEST"></div>-->
 <script src="/script.js"></script>
 </body>

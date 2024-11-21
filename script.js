@@ -22,3 +22,17 @@ const welcomeSectionObserver = new IntersectionObserver(function(entries, welcom
 }, welcomeSectionOptions);
 
 welcomeSectionObserver.observe(welcomeSection);
+
+//LINK COPIER
+
+function copyLink(linkNameParam){
+    const linkName = document.querySelector(linkNameParam).innerHTML;
+    navigator.clipboard.writeText(linkName);
+
+    const linkCopiedConfirmation = document.querySelector(".link-copied-confirmation");
+    linkCopiedConfirmation.style.opacity = "1";
+
+    setTimeout(() => {
+        linkCopiedConfirmation.style.opacity = "0";
+    }, 3000)
+}

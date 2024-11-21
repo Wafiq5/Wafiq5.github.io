@@ -25,7 +25,14 @@
     border-radius: 20px;
     opacity: .5;
 }
-
+.fa-brands{
+    color: var(--text-color);
+    transition: all .3s ease-in-out;
+}
+.fa-brands:hover{
+    opacity: .5;
+    cursor: pointer;
+}
 .gradient-text {
     color: transparent;
     background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
@@ -37,7 +44,11 @@
     transition: background-image 0.3s ease;
     cursor: pointer;
 }
-
+.section-header{
+    color: var(--text-color);
+    font-family: Cascadia Code, sans-serif;
+    font-size: 32px;
+}
 .grid-left {
     position: absolute;
     left: 0;
@@ -147,4 +158,19 @@
     width: max-content;
     background: transparent;
     border: none;
+}
+.link-copied-confirmation{
+    position: fixed;
+    z-index: 100000;
+    bottom: 0;
+    color: var(--text-color);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(45deg, rgba(66, 108, 87, 0.29), rgba(116, 120, 145, 0.31));
+    padding: 20px 40px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }

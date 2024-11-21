@@ -18,10 +18,6 @@
     align-items: center;
 }
 
-.yt-channel-section-paragraph-title {
-    font-size: 34px;
-    color: var(--text-color);
-}
 
 .yt-channel-section-text-container {
     display: flex;

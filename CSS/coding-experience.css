@@ -16,10 +16,6 @@
     flex-direction: column;
     gap: 40px;
 }
-.coding-experience-section-paragraph-title{
-    color: #ffffff;
-    font-size: 34px;
-}
 
 .ui-window-container {
     display: flex;

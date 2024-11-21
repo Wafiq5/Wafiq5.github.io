@@ -13,7 +13,7 @@
 }
 .section-container{
     position: relative;
-    height: 100vh;
+    height: max-content;
 }
 ::-webkit-scrollbar {
     width: 6px;

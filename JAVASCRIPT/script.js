@@ -3,24 +3,22 @@ class Wafiq5Navbar extends HTMLElement {
         this.innerHTML = `
             <div class="navbar">
                 <div class="brand-name">
-                    <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="../index.html">Wafiq</a></span>&gt;</span>
+                    <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="../../index.html">Wafiq</a></span>&gt;</span>
                     <span class="menu-toggle button">&#9776;</span>
                 </div>
             
                 <ul class="navbar-ul">
-                    <li class="navbar-li button" onclick="window.location.href='../index.html'">Home</li>
-                    <li class="navbar-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
-                    <li class="navbar-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
-                    <li class="navbar-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
-                    <li class="navbar-li button" onclick="window.location.href='../HTML/test.html'">Test</li>
-
+                    <li class="navbar-li button" onclick="window.location.href='../../index.html'">Home</li>
+                    <li class="navbar-li button" onclick="window.location.href='./skills.html'">Skills</li>
+                    <li class="navbar-li button" onclick="window.location.href='./projects.html'">Projects</li>
+                    <li class="navbar-li button" onclick="window.location.href='./contact.html'">Contact</li>
                 </ul>
             
                 <ul class="bubble-navbar-ul">
-                    <li class="navbar-li button-2" onclick="window.location.href='../index.html'"><i class="fas fa-home"></i></li>
-                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/skills.html'"><i class="fa-solid fa-palette"></i></li>
-                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
-                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/contact.html'"><i class="fa-solid fa-phone"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='../../index.html'"><i class="fas fa-home"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='./skills.html'"><i class="fa-solid fa-palette"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='./projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='./contact.html'"><i class="fa-solid fa-phone"></i></li>
                 </ul>
             </div>
         `;
@@ -48,10 +46,10 @@ class Wafiq5Footer extends HTMLElement {
                         </div>
                         <ul class="footer-ul">
                             <div class="footer-ul-header">Know More _</div>
-                            <li class="footer-li button" onclick="window.location.href='../index.html'">Home</li>
-                            <li class="footer-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
-                            <li class="footer-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
-                            <li class="footer-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
+                            <li class="footer-li button" onclick="window.location.href='../../index.html'">Home</li>
+                            <li class="footer-li button" onclick="window.location.href='./skills.html'">Skills</li>
+                            <li class="footer-li button" onclick="window.location.href='./projects.html'">Projects</li>
+                            <li class="footer-li button" onclick="window.location.href='./contact.html'">Contact</li>
                         </ul>
                     </div>
                 </footer>

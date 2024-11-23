@@ -1,60 +1,66 @@
 class Wafiq5Navbar extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<div class="navbar">
-    <div class="brand-name">
-        <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="../index.html">Wafiq</a></span>&gt;</span>
-        <span class="menu-toggle button">&#9776;</span>
-    </div>
+        this.innerHTML = `
+            <div class="navbar">
+                <div class="brand-name">
+                    <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="../index.html">Wafiq</a></span>&gt;</span>
+                    <span class="menu-toggle button">&#9776;</span>
+                </div>
+            
+                <ul class="navbar-ul">
+                    <li class="navbar-li button" onclick="window.location.href='../index.html'">Home</li>
+                    <li class="navbar-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
+                    <li class="navbar-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
+                    <li class="navbar-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
+                    <li class="navbar-li button" onclick="window.location.href='../HTML/test.html'">Test</li>
 
-    <ul class="navbar-ul">
-        <li class="navbar-li button" onclick="window.location.href='../index.html'">Home</li>
-        <li class="navbar-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
-        <li class="navbar-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
-        <li class="navbar-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
-    </ul>
-
-    <ul class="bubble-navbar-ul">
-        <li class="navbar-li button-2" onclick="window.location.href='../index.html'"><i class="fas fa-home"></i></li>
-        <li class="navbar-li button-2" onclick="window.location.href='../HTML/skills.html'"><i class="fa-solid fa-palette"></i></li>
-        <li class="navbar-li button-2" onclick="window.location.href='../HTML/projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
-        <li class="navbar-li button-2" onclick="window.location.href='../HTML/contact.html'"><i class="fa-solid fa-phone"></i></li>
-    </ul>
-</div>`;
+                </ul>
+            
+                <ul class="bubble-navbar-ul">
+                    <li class="navbar-li button-2" onclick="window.location.href='../index.html'"><i class="fas fa-home"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/skills.html'"><i class="fa-solid fa-palette"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
+                    <li class="navbar-li button-2" onclick="window.location.href='../HTML/contact.html'"><i class="fa-solid fa-phone"></i></li>
+                </ul>
+            </div>
+        `;
     }
 }
 
 class Wafiq5Footer extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<div class="footer-container">
-    <div class="grid-left"></div>
-    <footer class="footer">
-        <div class="footer-text-container">
-            <div class="footer-header-social-links">
-                <h2 class="section-header"><span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h2>
-                <div class="footer-social-links">
-                    <a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="discord-link">
-                        <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
-                        <span class="discord-username">wafiq810</span>
-                    </a>
+        this.innerHTML = `
+            <div class="footer-container">
+                <div class="grid-left"></div>
+                <footer class="footer">
+                    <div class="footer-text-container">
+                        <div class="footer-header-social-links">
+                            <h2 class="section-header"><span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h2>
+                            <div class="footer-social-links">
+                                <a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="discord-link">
+                                    <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
+                                    <span class="discord-username">wafiq810</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer-ul">
+                            <div class="footer-ul-header">Know More _</div>
+                            <li class="footer-li button" onclick="window.location.href='../index.html'">Home</li>
+                            <li class="footer-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
+                            <li class="footer-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
+                            <li class="footer-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
+                        </ul>
+                    </div>
+                </footer>
+                <div class="footer-lets-code-overlay"></div>
+                <div class="footer-copyright-container">
+                    <div class="copyright">© 2024 Wafiq All Rights Reserved</div>
                 </div>
             </div>
-            <ul class="footer-ul">
-                <div class="footer-ul-header">Know More _</div>
-                <li class="footer-li button" onclick="window.location.href='../index.html'">Home</li>
-                <li class="footer-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
-                <li class="footer-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
-                <li class="footer-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
-            </ul>
-        </div>
-    </footer>
-    <div class="footer-lets-code-overlay"></div>
-    <div class="footer-copyright-container">
-        <div class="copyright">© 2024 Wafiq All Rights Reserved</div>
-    </div>
-</div>`;
+        `;
     }
 }
 

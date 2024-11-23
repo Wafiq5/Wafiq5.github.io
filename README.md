@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 style="color: transparent; background-image: linear-gradient(45deg, #42d392, #647eff); background-clip: text; -webkit-background-clip: text; font-family: 'Cascadia Code', sans-serif; font-weight: 600; opacity: 0.75;">Wafiq5</h1>
+<h1 style="color: transparent; background-image: linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); background-clip: text; -webkit-background-clip: text; font-family: 'Cascadia Code', sans-serif; font-weight: 600; opacity: 0.75;">Wafiq5</h1>
 
 Welcome to my portfolio website! Here, you can know more about my skills and experiences!
 

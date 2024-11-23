@@ -100,7 +100,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         welcomeSectionObserver.observe(welcomeSection);
     }
+    //
+    // Function to handle the scrolling behavior
+    function scrollToSection(buttonId, targetSectionId) {
+        document.getElementById(buttonId).addEventListener('click', function() {
+            document.getElementById(targetSectionId).scrollIntoView({ behavior: 'smooth', block: "center"});
+        });
+    }
 
+// Call the function with the button ID and target section ID
+    scrollToSection('welcome-section-know-more-button', 'coding-experience-section-container');
     // LINK COPIER
     window.copyLink = function (linkNameParam) {
         const linkNameElement = document.querySelector(linkNameParam);

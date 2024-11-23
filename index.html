@@ -32,17 +32,17 @@
     </div>
 
     <ul class="navbar-ul">
-        <li class="navbar-li button"><a href="./index.html">Home</a></li>
-        <li class="navbar-li button"><a href="HTML/sub-pages/skills.html">Skills</a></li>
-        <li class="navbar-li button"><a href="HTML/sub-pages/projects.html">Projects</a></li>
-        <li class="navbar-li button"><a href="HTML/sub-pages/contact.html">Contact</a></li>
+        <li class="navbar-li button" onclick="window.location.href='./index.html'">Home</li>
+        <li class="navbar-li button" onclick="window.location.href='HTML/sub-pages/skills.html'">Skills</li>
+        <li class="navbar-li button" onclick="window.location.href='HTML/sub-pages/projects.html'">Projects</li>
+        <li class="navbar-li button" onclick="window.location.href='HTML/sub-pages/contact.html'">Contact</li>
     </ul>
 
     <ul class="bubble-navbar-ul">
-        <li class="navbar-li button-2"><a href="./index.html"><i class="fas fa-home"></i></a></li>
-        <li class="navbar-li button-2"><a href="HTML/sub-pages/skills.html"><i class="fa-solid fa-palette"></i></a></li>
-        <li class="navbar-li button-2"><a href="HTML/sub-pages/projects.html"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-        <li class="navbar-li button-2"><a href="HTML/sub-pages/contact.html"><i class="fa-solid fa-phone"></i></a></li>
+        <li class="navbar-li button-2" onclick="window.location.href='./index.html'"><i class="fas fa-home"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='HTML/sub-pages/skills.html'"><i class="fa-solid fa-palette"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='HTML/sub-pages/projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='HTML/sub-pages/contact.html'"><i class="fa-solid fa-phone"></i></li>
     </ul>
 </div>
 
@@ -59,7 +59,7 @@
                 <div class="welcome-paragraph">
                     I am a High school student with 16 years of coding experience (I'm 14 years old)
                 </div>
-                <button class="button button-20px"><a href="#coding-experience-section-container">Know More!</a></button>
+                <button id="welcome-section-know-more-button" class="button button-20px">Know More!</button>
             </div>
             <div class="welcome-section-image-container">
                 <img class="pic-1 landing-image" src="/Pictures/Pic%20-%201%20(Landing%20%7BCPU%20CHIP%7D).svg" alt="CPU with Wafiq's Logo">
@@ -148,36 +148,36 @@
     </div>
     <div class="section-gap"></div>
 
-    <div class="footer-container">
-        <div class="grid-left"></div>
-        <footer class="footer">
-            <div class="footer-text-container">
-                <div class="footer-header-social-links">
-                    <h2 class="section-header"><span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h2>
-                    <div class="footer-social-links">
-                        <a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="discord-link">
-                            <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
-                            <span class="discord-username">wafiq810</span>
-                        </a>
-                    </div>
+<div class="footer-container">
+    <div class="grid-left"></div>
+    <footer class="footer">
+        <div class="footer-text-container">
+            <div class="footer-header-social-links">
+                <h2 class="section-header"><span class="gradient-text">Wafiq </span> <div class="blinking-cursor"></div> </h2>
+                <div class="footer-social-links">
+                    <a href="https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="discord-link">
+                        <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
+                        <span class="discord-username">wafiq810</span>
+                    </a>
                 </div>
-                <ul class="footer-ul">
-                    <div class="footer-ul-header">Know More _</div>
-                    <li class="footer-li button"><a href="./index.html">Home</a></li>
-                    <li class="footer-li button"><a href="HTML/sub-pages/skills.html">Skills</a></li>
-                    <li class="footer-li button"><a href="HTML/sub-pages/projects.html">Projects</a></li>
-                    <li class="footer-li button"><a href="HTML/sub-pages/contact.html">Contact</a></li>
-                </ul>
             </div>
-        </footer>
-        <div class="footer-lets-code-overlay"></div>
-        <div class="footer-copyright-container">
-            <div class="copyright">© 2024 Wafiq All Rights Reserved</div>
+            <ul class="footer-ul">
+                <div class="footer-ul-header">Know More _</div>
+                <li class="footer-li button" onclick="window.location.href='./index.html'">Home</li>
+                <li class="footer-li button" onclick="window.location.href='HTML/sub-pages/skills.html'">Skills</li>
+                <li class="footer-li button" onclick="window.location.href='HTML/sub-pages/projects.html'">Projects</li>
+                <li class="footer-li button" onclick="window.location.href='HTML/sub-pages/contact.html'">Contact</li>
+            </ul>
         </div>
+    </footer>
+    <div class="footer-lets-code-overlay"></div>
+    <div class="footer-copyright-container">
+        <div class="copyright">© 2024 Wafiq All Rights Reserved</div>
     </div>
+</div>
 <!--<div class="long-space-TEST"></div>-->
 <script src="/JAVASCRIPT/script.js"></script>
 </body>

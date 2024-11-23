@@ -1,4 +1,4 @@
-\# Wafiq5
+# Wafiq5
 
 Welcome to my portfolio website! Here, you can know more about my skills and ecperiences!
 
@@ -24,3 +24,4 @@ If you feel like reaching out and helping my build my website, please do so. It 
 
 
 © 2024 Wafiq. All Rights Reserved.
+![pic](Pictures/Pic - 1 (Landing {CPU CHIP}).svg)

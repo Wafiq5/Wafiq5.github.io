@@ -7,17 +7,17 @@ class Wafiq5Navbar extends HTMLElement {
     </div>
 
     <ul class="navbar-ul">
-        <li class="navbar-li button"><a href="../index.html">Home</a></li>
-        <li class="navbar-li button"><a href="../HTML/skills.html">Skills</a></li>
-        <li class="navbar-li button"><a href="../HTML/projects.html">Projects</a></li>
-        <li class="navbar-li button"><a href="../HTML/contact.html">Contact</a></li>
+        <li class="navbar-li button" onclick="window.location.href='../index.html'">Home</li>
+        <li class="navbar-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
+        <li class="navbar-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
+        <li class="navbar-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
     </ul>
 
     <ul class="bubble-navbar-ul">
-        <li class="navbar-li button-2"><a href="../index.html"><i class="fas fa-home"></i></a></li>
-        <li class="navbar-li button-2"><a href="../HTML/skills.html"><i class="fa-solid fa-palette"></i></a></li>
-        <li class="navbar-li button-2"><a href="../HTML/projects.html"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-        <li class="navbar-li button-2"><a href="../HTML/contact.html"><i class="fa-solid fa-phone"></i></a></li>
+        <li class="navbar-li button-2" onclick="window.location.href='../index.html'"><i class="fas fa-home"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='../HTML/skills.html'"><i class="fa-solid fa-palette"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='../HTML/projects.html'"><i class="fa-solid fa-screwdriver-wrench"></i></li>
+        <li class="navbar-li button-2" onclick="window.location.href='../HTML/contact.html'"><i class="fa-solid fa-phone"></i></li>
     </ul>
 </div>`;
     }
@@ -43,10 +43,10 @@ class Wafiq5Footer extends HTMLElement {
             </div>
             <ul class="footer-ul">
                 <div class="footer-ul-header">Know More _</div>
-                <li class="footer-li button"><a href="../index.html">Home</a></li>
-                <li class="footer-li button"><a href="../HTML/skills.html">Skills</a></li>
-                <li class="footer-li button"><a href="../HTML/projects.html">Projects</a></li>
-                <li class="footer-li button"><a href="../HTML/contact.html">Contact</a></li>
+                <li class="footer-li button" onclick="window.location.href='../index.html'">Home</li>
+                <li class="footer-li button" onclick="window.location.href='../HTML/skills.html'">Skills</li>
+                <li class="footer-li button" onclick="window.location.href='../HTML/projects.html'">Projects</li>
+                <li class="footer-li button" onclick="window.location.href='../HTML/contact.html'">Contact</li>
             </ul>
         </div>
     </footer>

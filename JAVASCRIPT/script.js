@@ -62,8 +62,17 @@ class Wafiq5Footer extends HTMLElement {
     }
 }
 
+class Wafiq5CopiedConfirmation extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<div class="link-copied-confirmation">Copied!</div>`;
+    }
+}
+
+
 customElements.define('wafiq5-navbar', Wafiq5Navbar);
 customElements.define('wafiq5-footer', Wafiq5Footer);
+customElements.define('wafiq5-copied-confirmation', Wafiq5CopiedConfirmation);
+
 
 document.addEventListener('DOMContentLoaded', function () {
     // NAVBAR RESPONSIVE

@@ -1,16 +1,26 @@
-# Wafiq5
+\# Wafiq5
 
-## Social
+Welcome to my portfolio website! Here, you can know more about my skills and ecperiences!
 
-- **YouTube**: [Visit my YouTube Channel](https://www.youtube.com/channel/UCUS9Lsz5ZGfBsDPuaeDLj7w)
-- **GitHub**: [Follow me on GitHub](https://github.com/Wafiq5)
-- **Instagram**: [Follow me on Instagram](https://www.instagram.com/wafiq_810/)
-- **Discord**: wafiq810
+## Know more abouy my:
+
+- **Skills**
+- **Projects**
+- **YouTube Channel**
 
 ## Languages Used
 
-- **CSS**
 - **HTML**
+- **CSS**
 - **JavaScript**
+
+## Contributing
+
+If you feel like reaching out and helping my build my website, please do so. It will be greatly appreciated.
+
+## Contact
+
+// Nothing here yet
+
 
 © 2024 Wafiq. All Rights Reserved.

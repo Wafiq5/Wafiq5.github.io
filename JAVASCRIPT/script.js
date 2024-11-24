@@ -1,3 +1,5 @@
+
+
 class Wafiq5Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -39,7 +41,7 @@ class Wafiq5Footer extends HTMLElement {
                                 <a href="https://github.com/Wafiq5"><i class="fa-brands fa-github"></i></a>
                                 <a href="https://www.instagram.com/wafiq_810/"><i class="fa-brands fa-instagram"></i></a>
                                 <a class="discord-link">
-                                    <i class="fa-brands fa-discord" onclick="copyLink('.discord-username')"></i>
+                                    <i class="fa-brands fa-discord" onclick="copyLink()"></i>
                                     <span class="discord-username">wafiq810</span>
                                 </a>
                             </div>
@@ -62,19 +64,25 @@ class Wafiq5Footer extends HTMLElement {
     }
 }
 
-class Wafiq5CopiedConfirmation extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `<div class="link-copied-confirmation">Copied!</div>`;
-    }
-}
 
 
 customElements.define('wafiq5-navbar', Wafiq5Navbar);
 customElements.define('wafiq5-footer', Wafiq5Footer);
-customElements.define('wafiq5-copied-confirmation', Wafiq5CopiedConfirmation);
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    // LINK COPIER
+    window.copyLink = (link) => {
+        const linkCopiedConfirmation = document.querySelector('.link-copied-confirmation')
+        navigator.clipboard.writeText(link)
+        linkCopiedConfirmation.style.opacity = 1;
+        setTimeout(() => {
+            linkCopiedConfirmation.style.opacity = 0;
+        }, 3000)
+    }
+
     // NAVBAR RESPONSIVE
     document.querySelector('.menu-toggle').addEventListener('click', function () {
         document.querySelector('.navbar-ul').classList.toggle('active');
@@ -109,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
         const offset = 105;
-        console.log(offset)
         button.addEventListener("touchstart", function () {
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
@@ -123,21 +130,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     scrollToSection('welcome-section-know-more-button', 'coding-experience-section-container');
-
-    // LINK COPIER
-    window.copyLink = function (linkNameParam) {
-        const linkNameElement = document.querySelector(linkNameParam);
-        if (linkNameElement) {
-            const linkName = linkNameElement.innerHTML;
-            navigator.clipboard.writeText(linkName).then(() => {
-                const linkCopiedConfirmation = document.querySelector('.link-copied-confirmation');
-                if (linkCopiedConfirmation) {
-                    linkCopiedConfirmation.style.opacity = '1';
-                    setTimeout(() => {
-                        linkCopiedConfirmation.style.opacity = '0';
-                    }, 3000);
-                }
-            })
-        }
-    };
 });

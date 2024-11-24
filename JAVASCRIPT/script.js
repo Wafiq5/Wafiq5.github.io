@@ -110,12 +110,10 @@ createIntersectionObserver(".welcome-section-container", "bubble-navbar", "navba
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
         button.addEventListener("touchstart", function () {
-            console.log("Button clicked");
-            targetSection.scrollIntoView({ behavior: 'smooth'});
+            targetSection.scrollIntoView({ behavior: 'smooth', block: "center"});
         });
 
         button.addEventListener("click", function () {
-            console.log("Button clicked");
             targetSection.scrollIntoView({ behavior: 'smooth' , block: 'center'});
         });
     }

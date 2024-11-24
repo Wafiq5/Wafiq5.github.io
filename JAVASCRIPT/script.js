@@ -1,4 +1,4 @@
-nclass Wafiq5Navbar extends HTMLElement {
+class Wafiq5Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class="navbar">
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollToSection(buttonId, targetSectionId) {
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
-        const offset = 135;
+        const offset = 155;
         console.log(offset)
         button.addEventListener("touchstart", function () {
             window.scrollTo({

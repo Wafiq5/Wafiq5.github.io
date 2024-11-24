@@ -5,13 +5,13 @@
     --gradient-end: #647eff;
     --background-color: #00000e;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Cascadia Code, sans-serif;
     scroll-behavior: smooth;
+    font-weight: 600;
 }
 
 body, html {

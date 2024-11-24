@@ -82,34 +82,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // INTERSECTION OBSERVER
+    function createIntersectionObserver(targetSelector, classToAdd, classToRemove) {
+    const targetElement = document.querySelector(targetSelector);
     const navbar = document.querySelector(".navbar");
-    const welcomeSection = document.querySelector(".welcome-section-container");
 
-    if (navbar && welcomeSection) {
-        const welcomeSectionObserver = new IntersectionObserver(function (entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) {
-                    navbar.classList.add("bubble-navbar");
-                    navbar.classList.remove("navbar");
+                    navbar.classList.add(classToAdd);
+                    navbar.classList.remove(classToRemove);
                 } else {
-                    navbar.classList.remove("bubble-navbar");
-                    navbar.classList.add("navbar");
+                    navbar.classList.remove(classToAdd);
+                    navbar.classList.add(classToRemove);
                 }
             });
         });
 
-        welcomeSectionObserver.observe(welcomeSection);
+        observer.observe(targetElement);
     }
-    //
-    // Function to handle the scrolling behavior
+
+// Usage
+createIntersectionObserver(".welcome-section-container", "bubble-navbar", "navbar");
+
+
+    // SECTION SCROLLER
     function scrollToSection(buttonId, targetSectionId) {
-        document.getElementById(buttonId).addEventListener('click', function() {
-            document.getElementById(targetSectionId).scrollIntoView({ behavior: 'smooth', block: "center"});
+        const button = document.getElementById(buttonId);
+        const targetSection = document.getElementById(targetSectionId);
+        button.addEventListener("touchstart", function () {
+            console.log("Button clicked");
+            targetSection.scrollIntoView({ behavior: 'smooth' , block: 'center'});
+        });
+
+        button.addEventListener("click", function () {
+            console.log("Button clicked");
+            targetSection.scrollIntoView({ behavior: 'smooth' , block: 'center'});
         });
     }
 
-// Call the function with the button ID and target section ID
     scrollToSection('welcome-section-know-more-button', 'coding-experience-section-container');
+
     // LINK COPIER
     window.copyLink = function (linkNameParam) {
         const linkNameElement = document.querySelector(linkNameParam);
@@ -123,9 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         linkCopiedConfirmation.style.opacity = '0';
                     }, 3000);
                 }
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
+            })
         }
     };
 });

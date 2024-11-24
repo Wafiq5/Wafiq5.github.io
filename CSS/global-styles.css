@@ -39,14 +39,12 @@
     background-clip: text;
     opacity: 0.75;
     -webkit-background-clip: text;
-    font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease;
     cursor: pointer;
 }
 .section-header{
     color: var(--text-color);
-    font-family: Cascadia Code, sans-serif;
     font-size: 32px;
 }
 .grid-left {
@@ -127,7 +125,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.75;
-    font-family: Cascadia Code, sans-serif;
     font-weight: 600;
     transition: background-image 0.3s ease, opacity 0.3s ease;
     cursor: pointer;

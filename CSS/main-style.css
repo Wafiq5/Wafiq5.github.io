@@ -12,6 +12,7 @@
     font-family: Cascadia Code, sans-serif;
     scroll-behavior: smooth;
     font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body, html {

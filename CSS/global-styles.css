@@ -46,6 +46,7 @@
 .section-header{
     color: var(--text-color);
     font-size: 32px;
+    font-weight: 500;
 }
 .grid-left {
     position: absolute;
@@ -156,11 +157,7 @@
     background: transparent;
     border: none;
 }
-button,
-.button,
-.button-2{
-    -webkit-tap-highlight-color: transparent;
-}
+
 .link-copied-confirmation{
     position: fixed;
     z-index: 100000;

@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function scrollToSection(buttonId, targetSectionId) {
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
-        const offset = 105;
+        const offset = 115;
         console.log(offset)
         button.addEventListener("touchstart", function () {
             window.scrollTo({

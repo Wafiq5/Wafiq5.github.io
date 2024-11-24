@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // INTERSECTION OBSERVER
     function createIntersectionObserver(targetSelector, classToAdd, classToRemove) {
-    const targetElement = document.querySelector(targetSelector);
-    const navbar = document.querySelector(".navbar");
+        const targetElement = document.querySelector(targetSelector);
+        const navbar = document.querySelector(".navbar");
 
         const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
@@ -101,16 +101,20 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(targetElement);
     }
 
-// Usage
-createIntersectionObserver(".welcome-section-container", "bubble-navbar", "navbar");
-
+    // Usage
+    createIntersectionObserver(".welcome-section-container", "bubble-navbar", "navbar");
 
     // SECTION SCROLLER
     function scrollToSection(buttonId, targetSectionId) {
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
+        const offset = 105;
+        console.log(offset)
         button.addEventListener("touchstart", function () {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: "center"});
+            window.scrollTo({
+                top: targetSection.offsetTop - offset,
+                behavior: 'smooth'
+            });
         });
 
         button.addEventListener("click", function () {

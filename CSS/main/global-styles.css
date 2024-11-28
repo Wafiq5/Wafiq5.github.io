@@ -6,7 +6,9 @@
     animation: cursor_blink 1s infinite;
     color: var(--text-color);
 }
-
+.paragraph{
+    font-size: 18px;
+}
 .section-gap{
     width: 100%;
     height: 30vh;
@@ -19,9 +21,6 @@
     width: 6px;
 }
 
-.paragraph{
-    font-size: 18px;
-}
 ::-webkit-scrollbar-thumb {
     background-image: linear-gradient(85deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     border-radius: 20px;

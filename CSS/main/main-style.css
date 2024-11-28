@@ -13,6 +13,11 @@
     scroll-behavior: smooth;
     font-weight: 500;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
 body, html {

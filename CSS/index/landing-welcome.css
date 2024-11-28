@@ -32,4 +32,5 @@
 
 .welcome-section-image-container {
     display: flex;
+    width: 19rem;
 }

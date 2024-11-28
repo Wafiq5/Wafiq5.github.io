@@ -106,15 +106,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         observer.observe(targetElement);
     }
-
-    // Usage
     createIntersectionObserver(".welcome-section-container", "bubble-navbar", "navbar");
 
     // SECTION SCROLLER
-    function scrollToSection(buttonId, targetSectionId) {
+    function scrollToSection(buttonId, targetSectionId, offsetNo, block) {
         const button = document.getElementById(buttonId);
         const targetSection = document.getElementById(targetSectionId);
-        const offset = 145;
+        const offset = offsetNo;
         button.addEventListener("touchstart", function () {
             window.scrollTo({
                 top: targetSection.offsetTop - offset,
@@ -123,9 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         button.addEventListener("click", function () {
-            targetSection.scrollIntoView({ behavior: 'smooth' , block: 'center'});
+            targetSection.scrollIntoView({ behavior: 'smooth' , block: block});
         });
     }
 
-    scrollToSection('welcome-section-know-more-button', 'coding-experience-section-container');
+    scrollToSection('welcome-section-know-more-button', 'coding-experience-section-container', 145, "center");
+    scrollToSection("footer-title", "welcome-section-container", 0, "start")
 });

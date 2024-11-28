@@ -1,0 +1,56 @@
+.contact-section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    color: var(--text-color);
+    width: 100%;
+}
+.contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 75px;
+    width: 85%;
+}
+.contact-section-title{
+    color: var(--text-color);
+    font-size: 32px;
+}
+.contact-connector-line{
+    width: 100%;
+    height: 2px;
+    background: var(--paragraph-color);
+    opacity: .2;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    gap: 50px;
+}
+.contact-title-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-title{
+    color: var(--text-color);
+    font-size: 22px;
+}
+.contact-textbox{
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background-color), var(--background-color)) padding-box,
+    linear-gradient(45deg, var(--gradient-start), var(--gradient-end)) border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    text-wrap: nowrap;
+    border-radius: 50px;
+    opacity: .7;
+    gap: 20px;
+}

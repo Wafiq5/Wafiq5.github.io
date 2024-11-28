@@ -9,6 +9,13 @@
 .paragraph{
     font-size: 18px;
 }
+a{
+    color: var(--text-color);
+    transition: all .3s ease-in-out;
+}
+a:active{
+    opacity: .7;
+}
 .section-gap{
     width: 100%;
     height: 30vh;

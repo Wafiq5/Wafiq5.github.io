@@ -26,5 +26,4 @@ If you feel like reaching out and helping me build my website, please do so. It 
 
 © 2024 Wafiq. All Rights Reserved. <br><br>
 <img src="PICTURES/Pic%20-%201%20(Landing%20%7BCPU%20CHIP%7D).svg" alt="Landing Image" width="250">
-
 </div>

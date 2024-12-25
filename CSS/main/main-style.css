@@ -4,6 +4,7 @@
     --gradient-start: #42d392;
     --gradient-end: #647eff;
     --background-color: #00000e;
+    --background-color-sec: #000413;
 }
 * {
     margin: 0;

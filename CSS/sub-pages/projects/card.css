@@ -1,0 +1,40 @@
+
+.project-card-container{
+    display: flex;
+    width: 1280px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-card-text-information{
+    color: var(--paragraph-color);
+}
+.project-card-header{
+    color: var(--text-color);
+    font-size: 28px;
+}
+.project-card{
+    width: 300px;
+    padding: 20px;
+    background-color: var(--background-color-sec);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project-card-image{
+    width: 100%;
+    border-radius: 7px;
+}
+.project-card-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-card-text-information{
+    font-size: 13px;
+}

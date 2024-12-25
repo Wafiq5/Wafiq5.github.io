@@ -4,7 +4,7 @@ class Wafiq5Navbar extends HTMLElement {
             <div class="navbar">
                 <div class="brand-name">
                     <span class="brand-logo gradient-text">&lt;/<span class="brand-text"><a href="../../index.html">Wafiq</a></span>&gt;</span>
-                    <span class="menu-toggle button">&#9776;</span>
+                    <span class="menu-toggle button"><img class="hamburger-menu" src="/ICONS/hamburger-menu.svg" alt=""></span>
                 </div>
             
                 <ul class="navbar-ul">
@@ -60,6 +60,10 @@ class Wafiq5Footer extends HTMLElement {
             </div>
         `;
     }
+}
+
+const projectCard = {
+    innerHTML: ``
 }
 
 

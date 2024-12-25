@@ -27,12 +27,15 @@
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
         font-size: 24px;
         cursor: pointer;
+        gap: 10px;
         color: #fff;
     }
-
+    .menu-toggle:active{
+        opacity: .7;
+    }
     .brand-name {
         width: 100%;
         justify-content: space-between;

@@ -125,4 +125,7 @@
         align-items:center;
         justify-content: center;
     }
+    .project-card-text-information{
+        text-align: center;
+    }
 }

@@ -120,4 +120,9 @@
         display: none;
     }
 
+    .project-card-text-container{
+        text-align: center;
+        align-items:center;
+        justify-content: center;
+    }
 }
